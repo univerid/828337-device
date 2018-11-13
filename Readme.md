@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Dmitry Skorokhodov](https://up.htmlacademy.ru/htmlcss/23/user/828337).
-* Наставник: `Неизвестно`.
+* Наставник: [Роман Духницький](https://htmlacademy.ru/profile/id59884)
 
 ---
 
