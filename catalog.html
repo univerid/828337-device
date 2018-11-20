@@ -41,9 +41,25 @@
         <li><a href="catalog.html">Каталог товаров</a></li>
         <li class="breadcrumbs-current">Моноподы для селфи</li>
       </ul>
-      <section class="filters">
+      <section class="filter">
         <h2 class="filter-title">Фильтр:</h2>
-        <!-- Здесь будет форма -->
+          <form action="#" method="post" enctype="multipart/form-data">
+            <!-- Здесь будет фильтр Стоимость -->
+            <div class="filter-color">
+              <h3 class="filter-section-title">Цвет</h3>
+              <input type="checkbox" name="black" id="black-field" checked><label for="black-field">Черный</label><br>
+              <input type="checkbox" name="white" id="white-field"><label for="white-field">Белый</label><br>
+              <input type="checkbox" name="blue" id="blue-field" checked><label for="blue-field">Синий</label><br>
+              <input type="checkbox" name="red" id="red-field" checked><label for="red-field">Красный</label><br>
+              <input type="checkbox" name="pink" id="pink-field"><label for="pink-field">Розовый</label><br>
+            </div>
+            <div class="filter-bluetooth">
+              <h3 class="filter-section-title">Bluetooth</h3>
+              <input type="radio" name="bluetooth" id="bluetooth-yes" value="bluetooth-yes"><label for="bluetooth-yes">Есть</label><br>
+              <input type="radio" name="bluetooth" id="bluetooth-no" value="bluetooth-no"><label for="bluetooth-no">Нет</label><br>
+              <p><input class="button filter-button" type="submit" value="Показать"></p>
+            </div>
+          </form>
       </section>
 
       <section class="sorting">
