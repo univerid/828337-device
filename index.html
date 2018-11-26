@@ -11,14 +11,16 @@
           <img src="img/logo-device-black.svg" width="164" height="35" alt="Логотип интернет-магазина «Device»">
         </a>
         <ul class="user-navigation">
-          <li class="search-open">Поиск по сайту</li>
-          <li class="login-link">Войти</li>
+          <li class="search-open"><a href="#">Поиск по сайту</a></li>
+          <li class="login-link"><a href="login.html">Войти</a></li>
           <li class="compare"><a href="compare.html">Сравнить</a></li>
           <li class="basket"><a href="basket.html">Корзина</a></li>
         </ul>
         <ul class="site-navigation">
           <li><a href="catalog.html">Каталог товаров</a></li>
-          <li><span class="catalog-open">+</span></li>
+          <li>
+            <button class="button catalog-open-button" type="button" aria-label="Раскрыть меню каталога товаров"></button>
+          </li>
           <li><a href="delivery.html">Доставка</a></li>
           <li><a href="warranty.html">Гарантия</a></li>
           <li><a href="contacts.html">Контакты</a></li>
@@ -235,10 +237,12 @@
         <p class="contacts-description">Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
         <div class="contacts-map">
           <!-- <iframe src="https://www.google.com/maps/embed?pb=" width="600" height="450" style="border:0" allowfullscreen></iframe> -->
-          <img src="img/map.jpg" width="560" height="222" alt="Карта">
+          <a href="#">
+            <img src="img/map.jpg" width="560" height="222" alt="Карта">
+          </a>
         </div>
         <p>
-          <a href="contacts.html">
+          <a href="write-us.html">
             <span class="button write-us-button">Напишите нам</span>
           </a>
         </p>
@@ -250,7 +254,7 @@
         <img src="img/logo-device-yellow.svg" width="164" height="35" alt="Логотип интернет-магазина «Device»">
       </a>
       <ul class="footer-user-navigation">
-        <li class="login-link">Войти</li>
+        <li class="login-link"><a href="login.html">Войти</a></li>
         <li class="compare"><a href="compare.html">Сравнить</a></li>
         <li class="basket"><a href="basket.html">Корзина</a></li>
       </ul>
@@ -276,5 +280,36 @@
         </a>
       </p>
     </footer>
+
+    <section class="modal modal-write-us">
+      <h2 class="visually-hidden">Форма письма</h2>
+      <form class="write-us-form" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label class="write-us-label" for="user-name">Ваше имя:</label>
+          <input class="write-us-name" id="user-name" type="text" name="user-name" placeholder="Имя Фамилия">
+        </p>
+        <p>
+          <label class="write-us-label" for="user-email">Ваш e-mail:</label>
+          <input class="write-us-email" id="user-email" type="email" name="user-email" placeholder="email@example.com">
+        </p>
+        <p>
+          <label class="write-us-label" for="email-text">Текст письма:</label>
+          <input class="write-us-text" id="email-text" type="text" name="email-text" placeholder="В свободной форме">
+        </p>
+        <button class="button email-send-button" type="submit">
+          Отправить
+        </button>
+      </form>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    </section>
+
+    <section class="modal modal-map">
+      <h2 class="visually-hidden">Как до нас добраться</h2>
+      <p>
+        <img src="img/map-big.jpg" width="960" height="559" alt="Офис компании по адресу ул. Строителей, 15, Москва">
+      </p>
+      <button class="modal-close" type="button" aria-label="Закрыть"></button>
+    </section>
+
   </body>
 </html>
