@@ -1,28 +1,28 @@
 @font-face {
     font-family: "gilroyextrabold";
-    src: url("fonts/gilroyextrabold-webfont.woff2") format("woff2");
-    font-weight: normal;
+    src: url("../fonts/gilroyextrabold-webfont.woff2") format("woff2");
+    font-weight: 800;
     font-style: normal;
 }
 
 @font-face {
     font-family: "gilroylight";
-    src: url("fonts/gilroylight-webfont.woff2") format("woff2");
-    font-weight: normal;
+    src: url("../fonts/gilroylight-webfont.woff2") format("woff2");
+    font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: "open_sanslight";
-    src: url("fonts/opensans-light-webfont.woff2") format("woff2");
-    font-weight: normal;
+    src: url("../fonts/opensans-light-webfont.woff2") format("woff2");
+    font-weight: 300;
     font-style: normal;
 }
 
 @font-face {
     font-family: "open_sansregular";
-    src: url("fonts/opensans-regular-webfont.woff2") format("woff2");
-    font-weight: normal;
+    src: url("../fonts/opensans-regular-webfont.woff2") format("woff2");
+    font-weight: 400;
     font-style: normal;
 }
 
@@ -104,9 +104,7 @@ a {
   opacity: 0.3;
 }
 
-.site-navigation,
-.user-navigation,
-.header-catalog-menu {
+.main-header ul {
   list-style: none;
 }
 
@@ -139,7 +137,8 @@ a {
   line-height: 30px;
 }
 
-.about-us-title {
+.about-us-title,
+.contacts-title {
   font-family: "gilroyextrabold", Arial, sans-serif;
   font-size: 47px;
   line-height: 48px;
@@ -150,4 +149,62 @@ a {
 
   background-color: #ffffff;
   border: none;
+}
+
+.transport-list a {
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 800;
+  color: #000000;
+  letter-spacing: 0;
+
+  background-color: #ffffff;
+  border: none;
+}
+
+.main-footer {
+  color: #ffffff;
+  letter-spacing: 0.01em;
+
+  background-color: #464646;
+}
+
+.footer-logo:hover,
+.footer-logo:focus {
+  opacity: 0.6;
+}
+
+.footer-logo:active {
+  opacity: 0.3;
+}
+
+.main-footer ul {
+  list-style: none;
+}
+
+.footer-user-navigation a {
+  color: #ffffff;
+  opacity: 0.7;
+  background-color: #464646;
+}
+
+.footer-user-navigation a:hover,
+.footer-user-navigation a:focus {
+  opacity: 1;
+}
+
+.footer-user-navigation a:active {
+  opacity: 0.3;
+}
+/*.site-navigation li {
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+
+  background-color: #f7e296;
 }
