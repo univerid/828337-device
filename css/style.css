@@ -1,27 +1,153 @@
 @font-face {
-    font-family: 'gilroyextrabold';
-    src: url('gilroyextrabold-webfont.woff2') format('woff2');
+    font-family: "gilroyextrabold";
+    src: url("fonts/gilroyextrabold-webfont.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'gilroylight';
-    src: url('gilroylight-webfont.woff2') format('woff2');
+    font-family: "gilroylight";
+    src: url("fonts/gilroylight-webfont.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'open_sanslight';
-    src: url('opensans-light-webfont.woff2') format('woff2');
+    font-family: "open_sanslight";
+    src: url("fonts/opensans-light-webfont.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
-    font-family: 'open_sansregular';
-    src: url('opensans-regular-webfont.woff2') format('woff2');
+    font-family: "open_sansregular";
+    src: url("fonts/opensans-regular-webfont.woff2") format("woff2");
     font-weight: normal;
     font-style: normal;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "open_sanslight", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #464646;
+
+  background-color: #ffffff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.button {
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  text-align: center;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+
+  vertical-align: middle;
+
+  background-color: #ffffff;
+  border: none;
+}
+
+.button:hover,
+.button:focus {
+  color: #000000;
+  background-color: #f0c52e;
+}
+
+.button:active {
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #f0c52e;
+}
+
+.service-button:active {
+  color: #f7e184;
+  background-color: #000000;
+}
+
+.main-header {
+  color: #000000;
+  letter-spacing: 0.01em;
+
+  background-color: #f7e296;
+}
+
+.main-header a {
+  color: #000000;
+}
+
+.main-header a:hover,
+.main-header a:focus {
+  opacity: 0.6;
+}
+
+.main-header a:active {
+  opacity: 0.3;
+}
+
+.main-header-logo:hover,
+.main-header-logo:focus {
+  opacity: 0.6;
+}
+
+.main-header-logo:active {
+  opacity: 0.3;
+}
+
+.site-navigation,
+.user-navigation,
+.header-catalog-menu {
+  list-style: none;
+}
+
+.search-open {
+  opacity: 0.3;
+}
+
+.search-open:hover {
+  opacity: 0.6;
+}
+
+.search-open:focus {
+  opacity: 1;
+}
+
+.site-navigation li {
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  color: #000000;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+
+  background-color: #f7e296;
+}
+
+.header-catalog-menu {
+  background-color: #f7e184;
+  line-height: 30px;
+}
+
+.about-us-title {
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: 800;
+  text-align: left;
+  color: #000000;
+  letter-spacing: 0.01em;
+
+  background-color: #ffffff;
+  border: none;
 }
