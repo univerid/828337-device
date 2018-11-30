@@ -197,14 +197,74 @@ a {
 .footer-user-navigation a:active {
   opacity: 0.3;
 }
-/*.site-navigation li {
+.middle-menu a {
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+
+  background-color: #464646;
+}
+
+.middle-menu a:hover,
+.middle-menu a:focus
+ {
+  opacity: 0.6;
+}
+
+.middle-menu a:active
+ {
+  opacity: 0.3;
+}
+
+.footer-copyright a:hover,
+.footer-copyright a:focus
+ {
+  opacity: 0.6;
+}
+
+.footer-copyright a:active
+ {
+  opacity: 0.3;
+}
+
+.modal-write-us {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.write-us-form label {
   font-family: "gilroyextrabold", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
   font-weight: 800;
   color: #000000;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
+  letter-spacing: 0;
 
-  background-color: #f7e296;
+  background-color: #ffffff;
+  border: none;
 }
+
+.write-us-form input {
+  font-family: "open_sansregular", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  font-weight: 400;
+  color: #464646;
+
+  background-color: #f2f2f2;
+  border: none;
+}
+
+/* .login-form input[type="text"],
+.login-form input[type="password"] {
+  font: inherit;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #f9f6f3;
+  border: 2px solid #000000;
+} */
