@@ -133,7 +133,7 @@ a {
 }
 
 .header-catalog-menu {
-  line-height: 30px;
+  line-height: 36px;
 }
 
 .about-us-title,
@@ -397,25 +397,67 @@ body {
 .main-header-logo-block {
   /* width: 1160px; */
   height: 35px;
-  margin-bottom: 35px;
+  margin-bottom: 18px;
 }
 
 .user-navigation {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  align-items: center;
+  height: 49px;
   margin: 0;
   padding: 0;
+  margin-bottom: 29px;
 
   list-style: none;
 }
 
+.search-open {
+  width: 440px;
+}
+
+.login-link {
+  width: 260px;
+  margin-left: 100px;
+}
+
+.compare {
+  width: 120px;
+  margin-left: 30px;
+}
+
+.basket {
+  width: 84px;
+  margin-left: 20px;
+}
+
 .site-navigation {
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
   margin: 0;
   padding: 0;
+  margin-bottom: 19px;
 
   list-style: none;
+}
+
+.header-catalog {
+  width: 230px;
+}
+.header-catalog-button  {
+  width: 70px;
+
+}
+.header-delivery {
+  width: 160px;
+  margin-left: 240px;
+}
+.header-warranty {
+  width: 140px;
+}
+.header-contacts {
+  width: 120px;
+  margin-left: 80px;
 }
 
 .header-catalog-menu {
@@ -424,3 +466,27 @@ body {
 
   list-style: none;
 }
+
+.header-catalog-block {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header-catalog-column-1 {
+  width: 200px;
+}
+
+.header-catalog-column-2 {
+  width: 160px;
+  margin-left: 40px;
+}
+
+.header-catalog-column-3 {
+  width: 200px;
+  margin-left: 40px;
+
+}
+
+/* visually-hidden
+slider-featured-products
+catalog-menu */
