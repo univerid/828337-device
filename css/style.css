@@ -487,6 +487,25 @@ body {
 
 }
 
-/* visually-hidden
-slider-featured-products
-catalog-menu */
+/* Временно скрываем блоки, для которых пока не делаем сетку  */
+.visually-hidden,
+.slider-featured-products,
+.catalog-menu,
+.services,
+.logotypes {
+  display: none;
+}
+
+.index-columns {
+  display: flex;
+  justify-content: space-between;
+
+  padding-bottom: 82px;
+}
+
+.about-us {
+  width: 480px;
+
+  /* Временно для сетки */
+  min-height: 573px;
+}
