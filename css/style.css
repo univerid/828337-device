@@ -499,13 +499,60 @@ body {
 .index-columns {
   display: flex;
   justify-content: space-between;
-
-  padding-bottom: 82px;
 }
 
 .about-us {
   width: 480px;
-
-  /* Временно для сетки */
   min-height: 573px;
+}
+
+.contacts {
+  width: 560px;
+  min-height: 573px;
+}
+
+.about-us-title,
+.contacts-title {
+  margin-top: 53px;
+}
+
+.main-footer {
+  margin-top: 82px;
+}
+
+.main-footer {
+  box-sizing: border-box;
+  width: 1440px;
+  padding: 66px 0px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-footer .container {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-top {
+  height: 35px;
+}
+
+.footer-user-navigation {
+  list-style: none;
+}
+
+.footer-middle {
+  height: 20px;
+}
+
+.middle-menu {
+  list-style: none;
+}
+
+.footer-bottom {
+  height: 35px;
+}
+
+.social-buttons {
+  list-style: none;
 }
