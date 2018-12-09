@@ -516,20 +516,34 @@ body {
   margin-top: 53px;
 }
 
-.main-footer {
-  box-sizing: border-box;
-  width: 1440px;
-  padding: 66px 0px;
-  margin-top: 82px;
-  margin-left: auto;
-  margin-right: auto;
+/*Сетка страницы каталога*/
+
+.inner-page .main-header {
+  margin-bottom: 37px;
+}
+
+.page-title {
+  margin: 0;
+  margin-left: 60px;
+  margin-bottom: 0px;
+  padding: 0;
+}
+
+/*---*/
+
+.main-footer-wrapper {
+  width: 100%;
+  background-color: #464646;
 }
 
 .main-footer .container {
   display: flex;
   flex-direction: column;
+  box-sizing: border-box;
+  padding-top: 66px;
+  padding-bottom: 66px;
+  margin-top: 82px;
 }
-
 
 .footer-top {
   display: flex;
