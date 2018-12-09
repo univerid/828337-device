@@ -190,10 +190,21 @@ a {
   opacity: 0.1;
 }
 
+.filter-title,
+.sorting-title {
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+
+  color: #000000;
+  letter-spacing: 0.2em;
+}
+
 .filters form {
 font-size: 14px;
 line-height: 40px;
-background-color: #eeeeee;
 }
 
 .filter fieldset {
@@ -207,8 +218,6 @@ background-color: #eeeeee;
   font-weight: 800;
   color: #000000;
   letter-spacing: 0.01em;
-
-  background-color: #eeeeee;
 }
 
 .filter ul {
@@ -354,9 +363,9 @@ background-color: #eeeeee;
 
 /* ----- Сеточные стили ----- */
 
-* {
+/* * {
   background: rgba(0, 255, 0, 0.13);
-}
+} */
 
 /* html,
 body {
@@ -525,11 +534,78 @@ body {
 .page-title {
   margin: 0;
   margin-left: 60px;
-  margin-bottom: 0px;
+  margin-bottom: 24px;
   padding: 0;
 }
 
-/*---*/
+.breadcrumbs {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.catalog-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.catalog-left-side {
+  background-color: #efefef;
+  flex-grow: 1;
+
+  box-shadow: 0 70px #dcdcdc inset;
+}
+
+.catalog-right-side {
+  flex-grow: 1;
+
+  box-shadow: 0 70px #efefef inset;
+}
+
+.catalog-container {
+  display: flex;
+  box-sizing: border-box;
+  width: 1200px;
+}
+
+.filter-title {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-top: 25px;
+  margin-bottom: 248px;
+}
+
+.sorting-title {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  margin-top: 25px;
+}
+
+.filters-column {
+  box-sizing: border-box;
+  width: 348px;
+  padding-left: 80px;
+  padding-right: 28px;
+  background: #efefef;
+  box-shadow: 0 70px #dcdcdc inset;
+}
+
+.catalog-column {
+  width: 852px;
+  padding-left: 72px;
+  padding-right: 20px;
+
+  box-shadow: 0 70px #efefef inset;
+}
+
+
+
+
+/*-----------*/
 
 .main-footer-wrapper {
   width: 100%;
