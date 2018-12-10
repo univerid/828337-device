@@ -67,52 +67,50 @@
         <div class="catalog-left-side">
         </div>
         <div class="catalog-container">
-          <section class="filters">
-            <div class="filters-column">
-              <h2 class="filter-title">Фильтр:</h2>
-              <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-                <!-- Здесь будет фильтр Стоимость -->
-                <fieldset>
-                  <legend>Цвет</legend>
-                  <ul>
-                    <li class="filter-option">
-                      <input class="filter-input filter-input-checkbox" type="checkbox" name="black" id="black-field" checked>
-                      <label for="black-field">Черный</label>
-                    </li>
-                    <li class="filter-option">
-                      <input class="filter-input filter-input-checkbox" type="checkbox" name="white" id="white-field" disabled>
-                      <label for="white-field">Белый</label>
-                    </li>
-                    <li class="filter-option">
-                      <input class="filter-input filter-input-checkbox" type="checkbox" name="blue" id="blue-field" checked>
-                      <label for="blue-field">Синий</label>
-                    </li>
-                    <li class="filter-option">
-                      <input class="filter-input filter-input-checkbox" type="checkbox" name="red" id="red-field" checked>
-                      <label for="red-field">Красный</label>
-                    </li>
-                    <li class="filter-option">
-                      <input class="filter-input filter-input-checkbox" type="checkbox" name="pink" id="pink-field">
-                      <label for="pink-field">Розовый</label>
-                    </li>
-                  </ul>
-                </fieldset>
-                <fieldset>
-                  <legend>Bluetooth</legend>
-                  <ul>
-                    <li class="filter-option">
-                      <input class="filter-input filter-input-radio" type="radio" name="bluetooth" id="bluetooth-yes" value="bluetooth-yes">
-                      <label for="bluetooth-yes">Есть</label>
-                    </li>
-                    <li class="filter-option">
-                      <input class="filter-input filter-input-radio" type="radio" name="bluetooth" id="bluetooth-no" value="bluetooth-no">
-                      <label for="bluetooth-no">Нет</label>
-                    </li>
-                  </ul>
-                </fieldset>
-                <button class="filter-button button" type="submit" >Показать</button>
-                </form>
-            </div>
+          <section class="filters-column">
+            <h2 class="filter-title">Фильтр:</h2>
+            <form class="filter" method="get" action="https://echo.htmlacademy.ru">
+              <!-- Здесь будет фильтр Стоимость -->
+              <fieldset>
+                <legend>Цвет</legend>
+                <ul>
+                  <li class="filter-option">
+                    <input class="filter-input filter-input-checkbox" type="checkbox" name="black" id="black-field" checked>
+                    <label for="black-field">Черный</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="filter-input filter-input-checkbox" type="checkbox" name="white" id="white-field" disabled>
+                    <label for="white-field">Белый</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="filter-input filter-input-checkbox" type="checkbox" name="blue" id="blue-field" checked>
+                    <label for="blue-field">Синий</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="filter-input filter-input-checkbox" type="checkbox" name="red" id="red-field" checked>
+                    <label for="red-field">Красный</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="filter-input filter-input-checkbox" type="checkbox" name="pink" id="pink-field">
+                    <label for="pink-field">Розовый</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset>
+                <legend>Bluetooth</legend>
+                <ul>
+                  <li class="filter-option">
+                    <input class="filter-input filter-input-radio" type="radio" name="bluetooth" id="bluetooth-yes" value="bluetooth-yes">
+                    <label for="bluetooth-yes">Есть</label>
+                  </li>
+                  <li class="filter-option">
+                    <input class="filter-input filter-input-radio" type="radio" name="bluetooth" id="bluetooth-no" value="bluetooth-no">
+                    <label for="bluetooth-no">Нет</label>
+                  </li>
+                </ul>
+              </fieldset>
+              <button class="filter-button button" type="submit" >Показать</button>
+            </form>
           </section>
 
           <div class="catalog-column">
@@ -177,13 +175,15 @@
                   </p>
                 </li>
               </ul>
-              <span class="button catalog-button catalog-button-back">Назад</span>
-              <ul class="pagination-list">
-                <li class="pagination-item pagination-item-current"><a>1</a></li>
-                <li class="pagination-item"><a href="#">2</a></li>
-                <li class="pagination-item"><a href="#">3</a></li>
-              </ul>
-              <span class="button catalog-button catalog-button-next">Вперед</span>
+              <div class="pagination">
+                <span class="button catalog-button catalog-button-back">Назад</span>
+                <ul class="pagination-list">
+                  <li class="pagination-item pagination-item-current"><a>1</a></li>
+                  <li class="pagination-item"><a href="#">2</a></li>
+                  <li class="pagination-item"><a href="#">3</a></li>
+                </ul>
+                <span class="button catalog-button catalog-button-next">Вперед</span>
+              </div>
             </section>
           </div>
         </div>
