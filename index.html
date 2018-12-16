@@ -51,49 +51,57 @@
           </div>
         </nav>
     </header>
+
     <main class="container">
       <h1 class="visually-hidden">«Device» - интернет-магазин гаджетов</h1>
-      <section class="slider-featured-products">
+      <section class="slider">
         <h2 class="visually-hidden">Рекомендуемые товары</h2>
-        <ul class="featured-products">
-          <li class="featured-item">
+        <div class="slider-controls">
+          <label for="product-1">Первый</label>
+          <label for="product-2">Второй</label>
+          <label for="product-3">Третий</label>
+        </div>
+        <ul class="slider-list">
+          <li class="slider-item" id="slide1">
             <h3 class="visually-hidden">Длинная палка для селфи модель XXX</h3>
-            <p class="featured-item-image">
-              <a href="catalog-item.html">
-                <img src="img/product-1.jpg" width="111" height="222" alt="Длинная палка для селфи модель XXX">
+            <div class="slider-left-column">
+              <a class="slider-image" href="catalog-item.html">
+                <img src="img/slider-1.png" width="384" height="486" alt="Длинная палка для селфи модель XXX">
               </a>
-            </p>
-            <p class="featured-item-number"><span>01</span></p>
-            <a href="catalog-item.html">
-              <p class="featured-item-slogan">Делай селфи,<br>
-                как Бен Стиллер!
-              </p>
-            </a>
-            <p class="featured-item-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм. </p>
-            <a href="catalog-item.html">
-              <span class="button featured-item-button">Подробнее</span>
-            </a>
+            </div>
+            <div class="slider-right-column">
+              <span class="slider-item-number">01</span>
+              <a href="catalog-item.html">
+                <p class="slider-item-slogan">Делай селфи,<br>
+                  как Бен Стиллер!
+                </p>
+              </a>
+              <p class="slider-item-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм. </p>
+              <a href="catalog-item.html">
+                <span class="button slider-item-button">Подробнее</span>
+              </a>
+              <h4 class="visually-hidden">Основные параметры товара</h4>
+              <table class="slider-table">
+                <tr class="slider-table-head">
+                  <td>Длина палки</td>
+                  <td>Вес палки</td>
+                  <td>Материал</td>
+                </tr>
+                <tr class="slider-table-data">
+                  <td>8,5 м</td>
+                  <td>5 кг</td>
+                  <td>Карбон</td>
+                </tr>
+              </table>
+            </div>
             <ul class="slider-pagination-list">
               <li class="slider-pagination-item pagination-item-current"><a></a></li>
               <li class="slider-pagination-item"><a href="#"></a></li>
               <li class="slider-pagination-item"><a href="#"></a></li>
             </ul>
-            <h4 class="visually-hidden">Основные параметры товара</h4>
-            <table class="slider-table">
-              <tr class="slider-table-head">
-                <td>Длина палки</td>
-                <td>Вес палки</td>
-                <td>Материал</td>
-              </tr>
-              <tr class="slider-table-data">
-                <td>8,5 м</td>
-                <td>5 кг</td>
-                <td>Карбон</td>
-              </tr>
-            </table>
           </li>
 
-          <li class="featured-item">
+          <li class="slider-item">
             <h3 class="visually-hidden">Мотивирующий фитнес-браслет ХХХ</h3>
             <p class="featured-item-image">
               <a href="catalog-item.html">
@@ -126,7 +134,7 @@
             </table>
           </li>
 
-          <li class="featured-item">
+          <li class="slider-item">
             <h3 class="visually-hidden">Квадрокоптер с лазером модель XXX</h3>
             <p class="featured-item-image">
               <a href="catalog-item.html">
