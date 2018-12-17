@@ -509,7 +509,7 @@ body {
 .visually-hidden,
 .header-catalog-block,
 /* .slider-featured-products, */
-.slider-item:not(:first-child),
+.slider-item:not(:nth-child(2)),
 .slider-controls,
 .slider-pagination-list
 /* .catalog-menu, */
@@ -558,8 +558,13 @@ body {
   width: 560px;
 }
 
-.slider-image {
+.slider-item:nth-child(1) .slider-image {
   margin: 4px auto;
+}
+
+.slider-item:nth-child(2) .slider-image {
+  margin-top: 15px;
+  margin-left: 116px;
 }
 
 .slider-item-number {
