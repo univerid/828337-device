@@ -43,6 +43,15 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+
+  clip: rect(0, 0, 0, 0);
+}
+
 .button {
   font-family: "gilroyextrabold", Arial, sans-serif;
   font-size: 18px;
@@ -370,9 +379,9 @@ line-height: 40px;
 
 /* ----- Сеточные стили ----- */
 
-* {
+/* * {
   background: rgba(0, 255, 0, 0.13);
-}
+} */
 
 /* html,
 body {
@@ -506,12 +515,9 @@ body {
 }
 
 /* Временно скрываем блоки, для которых пока не делаем сетку  */
-.visually-hidden,
-.header-catalog-block,
+.header-catalog-block
 /* .slider-featured-products, */
-.slider-item:not(:nth-child(3)),
-.slider-controls,
-.slider-pagination-list
+/* .slider-item:not(:nth-child(3)), */
 /* .catalog-menu, */
 /* .services, */
 /* .logotypes */
@@ -520,6 +526,7 @@ body {
 }
 
 .slider {
+  position: relative;
   min-height: 516px;
   margin-bottom: 80px;
 }
@@ -607,7 +614,8 @@ body {
 }
 
 .slider-item-description {
-  width: 460px;
+  width: 500px;
+  /* width: 482px; */
   margin: 0;
   margin-top: 17px;
 
@@ -615,7 +623,7 @@ body {
 }
 
 .slider-item-button {
-  display: block;
+  display: inline-block;
   outline: 1px #888888;
   width: 220px;
   height: 40px;
@@ -667,6 +675,57 @@ padding: 0;
 
 .slider-table-head td {
   padding-top: 8px;
+}
+
+.slider-controls {
+  position: absolute;
+  height: 12px;
+
+  bottom: 174px;
+  right: 66px;
+
+  z-index: 5;
+}
+
+.slider-controls label {
+  position: relative;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 17px;
+
+  vertical-align: top;
+
+  background-color: transparent;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.slider-item {
+  display: none;
+}
+
+#product-1:checked ~ .slider-list #slide1,
+#product-2:checked ~ .slider-list #slide2,
+#product-3:checked ~ .slider-list #slide3 {
+  display: flex;
+}
+
+#product-1:checked ~ .slider-controls label[for="product-1"]::before,
+#product-2:checked ~ .slider-controls label[for="product-2"]::before,
+#product-3:checked ~ .slider-controls label[for="product-3"]::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 2px;
+  z-index: 5;
+  left: 50%;
+  top: 50%;
+  margin: -2px;
+  background-color: inherit;
+  border: 1px solid #000000;
+  border-radius: 50%;
 }
 
 
