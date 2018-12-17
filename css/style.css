@@ -509,7 +509,7 @@ body {
 .visually-hidden,
 .header-catalog-block,
 /* .slider-featured-products, */
-.slider-item:not(:nth-child(2)),
+.slider-item:not(:nth-child(3)),
 .slider-controls,
 .slider-pagination-list
 /* .catalog-menu, */
@@ -567,6 +567,11 @@ body {
   margin-left: 116px;
 }
 
+.slider-item:nth-child(3) .slider-image {
+  margin-top: 67px;
+  margin-left: 32px;
+}
+
 .slider-item-number {
   position: absolute;
   top: -8px;
@@ -602,7 +607,7 @@ body {
 }
 
 .slider-item-description {
-  width: 490px;
+  width: 460px;
   margin: 0;
   margin-top: 17px;
 
