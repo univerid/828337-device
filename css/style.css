@@ -613,6 +613,27 @@ body {
   margin-top: 45px;
 }
 
+.slider-table {
+  border-collapse: collapse;
+  margin-top: 49px;
+}
+
+.slider-table td {
+padding: 0;
+}
+
+.col1 {
+  width: 159px;
+}
+
+.col2 {
+  width: 140px;
+}
+
+.col3 {
+  width: 160px;
+}
+
 .slider-table-head {
   display: table-row-group;
 
@@ -634,7 +655,9 @@ body {
   background-color: #ffffff;
 }
 
-
+.slider-table-head td {
+  padding-top: 8px;
+}
 
 
 .catalog-menu {
