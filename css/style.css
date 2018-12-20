@@ -378,10 +378,10 @@ line-height: 40px;
 }
 
 /* ----- Сеточные стили ----- */
-/*
+
 * {
   background: rgba(0, 255, 0, 0.13);
-} */
+}
 
 /* html,
 body {
@@ -842,23 +842,45 @@ padding: 0;
 }
 
 .services-wrapper {
-  display: flex;
-  justify-content: center;
-  width: auto;
-
-  box-shadow: 0 0 50px gray inset;
+  width: 100%;
+  background-color: #ffffff;
+  box-shadow: 0 -288px #e5e5e5 inset;
 }
+
+.services .container {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+
+  box-sizing: border-box;
+}
+
+.services-controls {
+  display: flex;
+  flex-direction: column;
+  width: 278px;
+  padding-top: 80px;
+
+}
+
+
 
 .services-list {
+  box-sizing: border-box;
+  width: 1122px;
   margin: 0;
   padding: 0;
-  min-height: 388px;
-  margin-left: auto;
-  margin-right: auto;
+
+  margin-bottom: 69px;
+  min-height: 319px;
+
+  border-left: 7px solid #000000;
 
   list-style: none;
-
 }
+
+
+
 
 .logotypes {
   min-height: 288px;
