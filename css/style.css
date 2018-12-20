@@ -378,10 +378,10 @@ line-height: 40px;
 }
 
 /* ----- Сеточные стили ----- */
-
+/*
 * {
   background: rgba(0, 255, 0, 0.13);
-}
+} */
 
 /* html,
 body {
@@ -767,12 +767,13 @@ padding: 0;
 .catalog-menu-item a {
   display: flex;
   flex-direction: column;
-
+  position: relative;
   color: #000000;
   text-decoration: none;
 }
 
 .catalog-menu-item a::before {
+  display: block;
   content: "";
   width: 160px;
   height: 160px;
@@ -783,41 +784,80 @@ padding: 0;
   background-position: center;
 }
 
-.catalog-menu-vr a::before{
+.catalog-menu-item a::after{
+  display: block;
+  position: absolute;
+  content: "";
+  width: 160px;
+  height: 160px;
+
+  background-repeat: no-repeat;
+}
+
+.catalog-menu-vr a::after{
   background-image: url("../img/popular-1.svg");
   background-position: 31px 50px;
 }
 
-.catalog-menu-monopods a::before{
+.catalog-menu-monopods a::after{
   background-image: url("../img/popular-2.svg");
   background-position: 38px 40px;
 }
 
-.catalog-menu-actioncameras a::before{
+.catalog-menu-actioncameras a::after{
   background-image: url("../img/popular-3.svg");
   background-position: 49px 37px;
 }
 
-.catalog-menu-fitness a::before{
+.catalog-menu-fitness a::after{
   background-image: url("../img/popular-4.svg");
   background-position: 28px 49px;
 }
 
-.catalog-menu-smartwatches a::before{
+.catalog-menu-smartwatches a::after{
   background-image: url("../img/popular-5.svg");
   background-position: 55px 30px;
 }
 
-.catalog-menu-quadcopters a::before{
+.catalog-menu-quadcopters a::after{
   background-image: url("../img/popular-6.svg");
   background-position: 13px 48px;
 }
 
+.catalog-menu-item a:hover::before,
+.catalog-menu-item a:focus::before {
+  background-color: #f0c52e;
+}
 
+.catalog-menu-item a:active::after {
+  opacity: 0.3;
+}
+
+.catalog-menu-item a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
 
 .services {
-  min-height: 388px;
   margin-bottom: 0;
+}
+
+.services-wrapper {
+  display: flex;
+  justify-content: center;
+  width: auto;
+
+  box-shadow: 0 0 50px gray inset;
+}
+
+.services-list {
+  margin: 0;
+  padding: 0;
+  min-height: 388px;
+  margin-left: auto;
+  margin-right: auto;
+
+  list-style: none;
+
 }
 
 .logotypes {
