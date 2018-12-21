@@ -147,7 +147,8 @@ a {
 
 .about-us-title,
 .contacts-title,
-.page-title {
+.page-title,
+.services-item h3 {
   font-family: "gilroyextrabold", Arial, sans-serif;
   font-size: 47px;
   line-height: 48px;
@@ -379,9 +380,9 @@ line-height: 40px;
 
 /* ----- Сеточные стили ----- */
 
-* {
+/* * {
   background: rgba(0, 255, 0, 0.13);
-}
+} */
 
 /* html,
 body {
@@ -843,8 +844,8 @@ padding: 0;
 
 .services-wrapper {
   width: 100%;
-  background-color: #ffffff;
-  box-shadow: 0 -288px #e5e5e5 inset;
+  background-color: #e5e5e5;
+  box-shadow: 0 100px #ffffff inset;
 }
 
 .services .container {
@@ -858,18 +859,36 @@ padding: 0;
 .services-controls {
   display: flex;
   flex-direction: column;
-  width: 278px;
+  width: 277px;
   padding-top: 80px;
-
+  vertical-align: middle;
 }
 
+.services-button {
+  box-sizing: border-box;
+  width: 160px;
+  height: 40px;
 
+  margin-bottom: 24px;
+  padding-top: 12px;
+
+  font-size: 18px;
+  line-height: 18px;
+
+  vertical-align: middle;
+}
+
+.services-button:active {
+}
 
 .services-list {
   box-sizing: border-box;
-  width: 1122px;
+  width: 883px;
   margin: 0;
   padding: 0;
+  padding-top: 74px;
+  padding-left: 116px;
+
 
   margin-bottom: 69px;
   min-height: 319px;
@@ -879,6 +898,43 @@ padding: 0;
   list-style: none;
 }
 
+/* #slide-warranty,
+#slide-credit {
+  display: none;
+} */
+
+.services-item {
+  min-height: 180px;
+  background-image: url("../img/delivery.svg");
+  background-position: 558px 10px;
+  background-repeat: no-repeat;
+}
+
+.services-item h3 {
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+}
+
+.service-description {
+  width: 460px;
+  margin-top: 30px;
+  letter-spacing: 0.01em;
+}
+
+.services-controls label {
+  cursor: pointer;
+}
+
+.services-item {
+  display: none;
+}
+
+#delivery:checked ~ .services-list #slide-delivery,
+#warranty:checked ~ .services-list #slide-warranty,
+#credit:checked ~ .services-list #slide-credit {
+  display: block;
+}
 
 
 

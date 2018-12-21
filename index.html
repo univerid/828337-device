@@ -58,9 +58,9 @@
       <div class="container">
         <section class="slider">
           <h2 class="visually-hidden">Рекомендуемые товары</h2>
-          <input class="visually-hidden" type="radio" id="product-1" name="toggle" checked>
-          <input class="visually-hidden" type="radio" id="product-2" name="toggle">
-          <input class="visually-hidden" type="radio" id="product-3" name="toggle">
+          <input class="visually-hidden" type="radio" id="product-1" name="slider-toggle" checked>
+          <input class="visually-hidden" type="radio" id="product-2" name="slider-toggle">
+          <input class="visually-hidden" type="radio" id="product-3" name="slider-toggle">
           <div class="slider-controls">
             <label for="product-1" aria-label="Первый"></label>
             <label for="product-2" aria-label="Второй"></label>
@@ -183,26 +183,28 @@
         <div class="services-wrapper">
           <div class="container">
             <h2 class="visually-hidden">Услуги</h2>
+            <input class="visually-hidden" type="radio" id="delivery" name="services-toggle" checked>
+            <input class="visually-hidden" type="radio" id="warranty" name="services-toggle">
+            <input class="visually-hidden" type="radio" id="credit" name="services-toggle">
+
             <div class="services-controls">
-              <a href="#">
-                <span class="button service-button service-current">Доставка</span>
-              </a>
-              <a href="#">
-                <span class="button service-button">Гарантия</span>
-              </a>
-              <a href="#">
-                <span class="button service-button">Кредит</span>
-              </a>
+              <label class="button services-button service-current" for="delivery">Доставка</label>
+              <label class="button services-button" for="warranty">Гарантия</label>
+              <label class="button services-button" for="credit">Кредит</label>
             </div>
-            
+
             <ul class="services-list">
-              <li class="services-item">
+              <li class="services-item" id="slide-delivery">
                 <h3 class="service-title">Доставка</h3>
                 <p class="service-description">Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
               </li>
-              <li class="services-item">
+              <li class="services-item" id="slide-warranty">
+                <h3 class="service-title">Гарантия</h3>
+                <p class="service-description">Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
               </li>
-              <li class="services-item">
+              <li class="services-item" id="slide-credit">
+                <h3 class="service-title">Кредит</h3>
+                <p class="service-description">Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
               </li>
             </ul>
           </div>
