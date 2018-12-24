@@ -971,6 +971,10 @@ padding: 0;
   margin-right: 0;
 }
 
+.logotypes-link {
+  display: flex;
+}
+
 .logotypes-link img.color {
   display: none;
 }
@@ -985,34 +989,62 @@ padding: 0;
   display: block;
 }
 
-
-
-
-
-
-
-
-
 .index-columns {
   display: flex;
   justify-content: space-between;
 }
 
 .about-us {
+  position: relative;
   width: 480px;
   min-height: 573px;
 }
 
 .contacts {
+  position: relative;
   width: 560px;
   min-height: 573px;
 }
 
-.about-us-title,
-.contacts-title {
-  margin-top: 53px;
+.about-us:before,
+.contacts:before {
+  content: "";
+  position: absolute;
+  width: 80px;
+  height: 7px;
+  top: 0;
+  left: 0;
+
+  background-color: #000000;
 }
 
+.about-us-title,
+.contacts-title {
+  margin: 0;
+  padding: 0;
+  /* margin-left: -2px; */
+
+  padding-top: 52px;
+  margin-bottom: 43px;
+}
+
+
+.about-us-description {
+  display: block;
+  margin-bottom: 30px;
+}
+
+.transport-list {
+/* list-style-type */
+
+}
+
+
+
+/*-----------------------*/
+/*-----------------------*/
+/*-----------------------*/
+/*-----------------------*/
 /*Сетка страницы каталога*/
 
 .inner-page .main-header {
