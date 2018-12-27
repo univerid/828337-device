@@ -1,4 +1,4 @@
-/* 
+/*
 * {
   background: rgba(0, 255, 0, 0.13);
 }
@@ -50,13 +50,28 @@ a {
   text-decoration: none;
 }
 
-.visually-hidden {
+img {
+  max-width: 100%;
+  height: auto;
+
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
   position: absolute;
 
   width: 1px;
   height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
 
-  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 .page-title,
@@ -1348,8 +1363,20 @@ line-height: 40px;
 
 
 .modal-write-us {
+  position: relative;
+  box-sizing: border-box;
+  width: 960px;
+  padding-top: 95px;
+  padding-bottom: 75px;
+  padding-left: 100px;
+  padding-right: 100px;
+
   color: #000000;
   background-color: #ffffff;
+
+  /* Временно */
+  outline: 1px solid gray;
+
 }
 
 .write-us-form label {
@@ -1374,3 +1401,95 @@ line-height: 40px;
   background-color: #f2f2f2;
   border: none;
 }
+
+.write-us-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 760px;
+  /* min-height: 390px; */
+
+  /* Временно */
+  outline: 1px solid gray;
+}
+
+.write-us-item {
+  margin: 0;
+  margin-bottom: 35px;
+
+  /* Временно */
+  outline: 1px solid gray;
+}
+
+.write-us-item:nth-child(1),
+.write-us-item:nth-child(2) {
+  width: 360px;
+
+}
+
+.write-us-item:nth-child(3) {
+  width: 100%;
+}
+
+.write-us-item label {
+  display: block;
+  margin-bottom: 6px;
+}
+
+.write-us-item input {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 20px;
+
+  /* Временно */
+  outline: 1px solid gray;
+}
+
+.write-us-text {
+  min-height: 156px;
+}
+
+.write-us-text::-webkit-input-placeholder {
+  vertical-align: top;
+}
+
+.email-send-button {
+
+}
+
+.modal-close {
+  position: absolute;
+  top: 24px;
+  right: 22px;
+  width: 55px;
+  height: 55px;
+
+  border-radius: 27px;
+  border: none;
+
+  background-color: #f7e296;
+}
+
+.modal-map {
+  position: relative;
+
+}
+
+/* .modal-close::after {
+  content: "";
+
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
+  width: 20px;
+  height: 20px;
+  margin-left: -10px;
+
+  background-color: #ffffff;
+
+  transform: rotate(45deg);
+} */
