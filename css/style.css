@@ -1,8 +1,8 @@
-/*
+
 * {
   background: rgba(0, 255, 0, 0.13);
 }
- */
+
 
 
 @font-face {
@@ -152,9 +152,9 @@ input[type="radio"].visually-hidden {
   margin-bottom: 18px;
 }
 
-
-
 .main-header {
+  position: relative;
+
   color: #000000;
   letter-spacing: 0.01em;
 
@@ -187,6 +187,8 @@ input[type="radio"].visually-hidden {
   list-style: none;
 }
 
+.main-navigation {
+}
 
 .user-navigation {
   display: flex;
@@ -219,6 +221,7 @@ input[type="radio"].visually-hidden {
   margin-left: 20px;
 }
 
+
 .site-navigation {
   display: flex;
   justify-content: flex-start;
@@ -232,10 +235,11 @@ input[type="radio"].visually-hidden {
 .header-catalog {
   width: 230px;
 }
+
 .header-catalog-button  {
   width: 70px;
-
 }
+
 .header-delivery {
   width: 160px;
   margin-left: 240px;
@@ -250,42 +254,6 @@ input[type="radio"].visually-hidden {
 
 
 
-.header-catalog-block {
-  display: flex;
-  justify-content: flex-start;
-}
-
-/* Временно скрываем выпадающее меню*/
-.header-catalog-block
-{
-  display: none;
-}
-
-.header-catalog-menu {
-  margin: 0;
-  padding: 0;
-
-  line-height: 36px;
-
-  list-style: none;
-}
-
-.header-catalog-column-1 {
-  width: 200px;
-}
-
-.header-catalog-column-2 {
-  width: 160px;
-  margin-left: 40px;
-}
-
-.header-catalog-column-3 {
-  width: 200px;
-  margin-left: 40px;
-
-}
-
-
 .search-open {
   opacity: 0.3;
 }
@@ -298,7 +266,7 @@ input[type="radio"].visually-hidden {
   opacity: 1;
 }
 
-.site-navigation li {
+.site-navigation {
   font-family: "gilroyextrabold", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -308,6 +276,61 @@ input[type="radio"].visually-hidden {
   letter-spacing: 0.2em;
 
   background-color: #f7e296;
+}
+
+
+.header-catalog-menu {
+  position: absolute;
+  left: 0;
+  z-index: 10;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+
+  box-sizing: border-box;
+  height: 161px;
+  width: 100%;
+
+  margin: 0;
+  padding: 0;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-top: 20px;
+  padding-bottom: 33px;
+
+  font-family: "open_sanslight", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  font-weight: 300;
+  letter-spacing: 0.01em;
+  color: #000000;
+  text-transform: none;
+
+
+  list-style: none;
+  background-color: #f7e296;
+  /* Временно скрываем выпадающее меню*/
+  display: none;
+}
+
+.header-catalog:hover .header-catalog-menu {
+  display: flex;
+}
+
+.header-catalog-menu li {
+  width: 200px;
+  margin-right: 40px;
+}
+
+.header-catalog-menu li:nth-child(5) {
+  margin-bottom: 36px;
+}
+
+.header-catalog-menu li:nth-child(n+4) {
+  width: 160px;
 }
 
 
@@ -1516,7 +1539,7 @@ line-height: 40px;
   box-sizing: border-box;
   width: 960px;
   height: 559px;
-  
+
 
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
 }
