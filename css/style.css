@@ -90,7 +90,7 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
-
+/* ---------- Кнопки ---------- */
 .button {
   position: relative;
   display: block;
@@ -99,21 +99,21 @@ input[type="radio"].visually-hidden {
   width: 260px;
   height: 40px;
 
-  padding-top: 10px;
+  margin: 0;
+  padding: 0;
+
+  padding-top: 12px;
 
   z-index: 1;
 
   font-family: "gilroyextrabold", Arial, sans-serif;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 18px;
   font-weight: 800;
   text-align: center;
   color: #000000;
   text-transform: uppercase;
   letter-spacing: 0.2em;
-
-  vertical-align: top;
-
 
   background-color: #ffffff;
   border: none;
@@ -136,38 +136,54 @@ input[type="radio"].visually-hidden {
   background-color: #f0c52e;
 }
 
-.button:hover::before {
+.button:hover::before,
+.button:focus::before
+ {
   transform: scaleY(5);
   transition-duration: 0.25s;
 }
 
-
-/*
-Трансформации:
-transform: translateX(250px) translateX(-250px);
-
-scaleY(масштаб-по-Y).
-*/
-
-
-.button:hover,
-.button:focus {
-  color: #000000;
-
-  /* background-color: #f0c52e; */
-}
-
 .button:active {
   color: rgba(0, 0, 0, 0.3);
-  background-color: #f0c52e;
+}
+
+/* -------------------- */
+
+.slider-item-button {
+  width: 220px;
+  margin-top: 45px;
+}
+
+.services-button {
+  width: 160px;
+  margin-bottom: 24px;
+}
+
+.about-us-button {
+  width: 260px;
+  margin-top: 53px;
+}
+
+.write-us-button {
+  width: 260px;
+  margin-top: 58px;
+}
+
+/* Кнопки всплывающих окон */
+.email-send-button {
+  padding-top: 0;
+
+  cursor: pointer;
+}
+
+/* Кнопки страницы каталога */
+.filter-button {
+  background-color: #eeeeee;
 }
 
 
 
-.service-button:active {
-  color: #f7e184;
-  background-color: #000000;
-}
+
 
 .container {
   display: flex;
@@ -280,10 +296,6 @@ scaleY(масштаб-по-Y).
 
 .header-catalog {
   width: 230px;
-}
-
-.header-catalog-button  {
-  width: 70px;
 }
 
 .header-delivery {
@@ -478,15 +490,6 @@ scaleY(масштаб-по-Y).
   letter-spacing: 0.01em;
 }
 
-/* Временно убираем
-.slider-item-button {
-  display: inline-block;
-  outline: 1px #888888;
-  width: 220px;
-  height: 40px;
-
-  margin-top: 45px;
-} */
 
 .slider-table {
   border-collapse: collapse;
@@ -721,23 +724,6 @@ padding: 0;
   vertical-align: middle;
 }
 
-.services-button {
-  box-sizing: border-box;
-  width: 160px;
-  height: 40px;
-
-  margin-bottom: 24px;
-  padding-top: 12px;
-
-  font-size: 18px;
-  line-height: 18px;
-
-  vertical-align: middle;
-}
-
-.services-button:active {
-}
-
 .services-list {
   box-sizing: border-box;
   width: 883px;
@@ -804,6 +790,21 @@ padding: 0;
 #credit:checked ~ .services-list #slide-credit {
   display: block;
 }
+
+#delivery:checked ~ .services-controls label[for="delivery"],
+#warranty:checked ~ .services-controls label[for="warranty"],
+#credit:checked ~ .services-controls label[for="credit"] {
+  color: #f7e184;
+  background-color: #000000;
+  box-shadow: 117px 0 0 0 #000000;
+}
+
+#delivery:checked ~ .services-controls label[for="delivery"]::before,
+#warranty:checked ~ .services-controls label[for="warranty"]::before,
+#credit:checked ~ .services-controls label[for="credit"]::before {
+  display: none;
+}
+
 
 .logotypes {
   /* min-height: 288px; */
@@ -921,20 +922,8 @@ padding: 0;
 
 }
 
-.about-us-button {
-  display: block;
-  width: 260px;
-  margin-top: 50px;
-}
-
 .contacts-map {
   margin-top: 40px;
-}
-
-.write-us-button {
-  display: block;
-  width: 260px;
-  margin-top: 50px;
 }
 
 /*-----------------------*/
@@ -1036,10 +1025,6 @@ line-height: 40px;
 
 .filter-input:disabled + label {
   color: #a6a6a6;
-}
-
-.filter-button {
-  background-color: #eeeeee;
 }
 
 .catalog-list {
@@ -1182,7 +1167,7 @@ line-height: 40px;
 /*------------------*/
 
 .main-footer {
-  margin-top: 80px;
+  margin-top: 67px;
   color: #ffffff;
   letter-spacing: 0.01em;
 
@@ -1525,10 +1510,6 @@ line-height: 40px;
 
 .write-us-text::-webkit-input-placeholder {
   vertical-align: top;
-}
-
-.email-send-button {
-
 }
 
 .modal-close {
