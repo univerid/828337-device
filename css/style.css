@@ -1,5 +1,5 @@
-
-/* * {
+/*
+* {
   background: rgba(0, 255, 0, 0.13);
 } */
 
@@ -92,6 +92,17 @@ input[type="radio"].visually-hidden {
 
 
 .button {
+  position: relative;
+  display: block;
+
+  box-sizing: border-box;
+  width: 260px;
+  height: 40px;
+
+  padding-top: 10px;
+
+  z-index: 1;
+
   font-family: "gilroyextrabold", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -101,22 +112,57 @@ input[type="radio"].visually-hidden {
   text-transform: uppercase;
   letter-spacing: 0.2em;
 
-  vertical-align: middle;
+  vertical-align: top;
+
 
   background-color: #ffffff;
   border: none;
+
+  /* Временно */
+  outline: 1px solid gray;
 }
+
+.button::before {
+  content: "";
+
+  position: absolute;
+  width: inherit;
+  height: 8px;
+  top: 16px;
+  left: 0;
+
+  z-index: -1;
+
+  background-color: #f0c52e;
+}
+
+.button:hover::before {
+  transform: scaleY(5);
+  transition-duration: 0.25s;
+}
+
+
+/*
+Трансформации:
+transform: translateX(250px) translateX(-250px);
+
+scaleY(масштаб-по-Y).
+*/
+
 
 .button:hover,
 .button:focus {
   color: #000000;
-  background-color: #f0c52e;
+
+  /* background-color: #f0c52e; */
 }
 
 .button:active {
   color: rgba(0, 0, 0, 0.3);
   background-color: #f0c52e;
 }
+
+
 
 .service-button:active {
   color: #f7e184;
@@ -432,6 +478,7 @@ input[type="radio"].visually-hidden {
   letter-spacing: 0.01em;
 }
 
+/* Временно убираем
 .slider-item-button {
   display: inline-block;
   outline: 1px #888888;
@@ -439,7 +486,7 @@ input[type="radio"].visually-hidden {
   height: 40px;
 
   margin-top: 45px;
-}
+} */
 
 .slider-table {
   border-collapse: collapse;
