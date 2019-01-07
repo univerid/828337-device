@@ -418,6 +418,8 @@ input.search-input:hover::placeholder, input.search-input:focus::placeholder {
 
 .site-navigation {
   display: flex;
+  flex-wrap: wrap;
+
   justify-content: flex-start;
   margin: 0;
   padding: 0;
@@ -446,7 +448,7 @@ input.search-input:hover::placeholder, input.search-input:focus::placeholder {
   position: absolute;
   width: 16px;
   height: 2px;
-  
+
   right: 9px;
   top: 10px;
 
@@ -467,14 +469,14 @@ input.search-input:hover::placeholder, input.search-input:focus::placeholder {
 
 .header-delivery {
   width: 160px;
-  margin-left: 240px;
+  margin-left: 285px;
 }
 .header-warranty {
-  width: 140px;
+  width: 120px;
 }
 .header-contacts {
   width: 120px;
-  margin-left: 80px;
+  margin-left: 100px;
 }
 
 .site-navigation {
