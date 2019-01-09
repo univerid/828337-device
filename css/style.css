@@ -184,8 +184,6 @@ input[type="radio"].visually-hidden {
 
 
 
-
-
 .container {
   display: flex;
   flex-direction: column;
@@ -197,17 +195,20 @@ input[type="radio"].visually-hidden {
   margin-right: auto;
 }
 
-.main-header.container {
+.main-header {
   box-sizing: border-box;
-  width: 1160px;
-  padding: 0 60px;
+  padding: 0 80px;
 
   margin-top: 24px;
   /* Временно для сетки */
   min-height: 203px;
 
-  box-shadow: 0 18px #ffffff inset;
+  box-shadow:
+  0 18px #ffffff inset,
+  20px 0 #ffffff inset,
+  -20px 0 #ffffff inset;
 }
+
 
 .main-header-logo-block {
   /* width: 1160px; */
@@ -1418,7 +1419,6 @@ line-height: 40px;
 .footer-user-navigation a:active::before {
   opacity: 0.3;
 }
-
 
 .main-footer ul {
   list-style: none;
