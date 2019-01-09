@@ -1307,13 +1307,11 @@ line-height: 40px;
   margin-top: 67px;
   color: #ffffff;
   letter-spacing: 0.01em;
-
-  background-color: #464646;
 }
 
 
 .main-footer-wrapper {
-  width: 100%;
+  width: auto;
   background-color: #464646;
 }
 
@@ -1324,6 +1322,7 @@ line-height: 40px;
   padding-top: 66px;
   padding-bottom: 66px;
   /* margin-top: 82px; */
+  background-color: #464646;
 }
 
 
