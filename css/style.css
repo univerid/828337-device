@@ -840,7 +840,7 @@ padding: 0;
 }
 
 .services-wrapper {
-  width: 100%;
+  width: auto;
   background-color: #e5e5e5;
   box-shadow: 0 100px #ffffff inset;
 }
@@ -851,6 +851,9 @@ padding: 0;
   align-items: flex-start;
 
   box-sizing: border-box;
+
+  background-color: #e5e5e5;
+  box-shadow: 0 100px #ffffff inset;
 }
 
 .services-controls {
