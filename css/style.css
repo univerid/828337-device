@@ -1080,17 +1080,19 @@ padding: 0;
   margin: 0;
   padding: 0;
   padding-left: 60px;
-  margin-bottom: 25px;
-
+  margin-bottom: 23px;
 }
 
 
 .breadcrumbs {
   display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
   padding: 0;
   margin: 0;
   margin-left: 60px;
-  margin-bottom: 39px;
+  margin-bottom: 45px;
 
   font-family: "open_sanslight", Arial, sans-serif;
   font-size: 14px;
@@ -1103,12 +1105,39 @@ padding: 0;
   border: none;
 
   list-style: none;
-
-  /* Временно */
-  /* background: rgba(234, 255, 45, 0.2);
-  box-shadow: inset 0 0 0 2px rgb(234, 255, 45); */
 }
 
+.breadcrumbs li {
+  position: relative;
+  margin-right: 38px;
+}
+
+.breadcrumbs li:last-child {
+  margin-right: 0;
+}
+
+.breadcrumbs li::after {
+  content: "";
+
+  position: absolute;
+  top: 10px;
+  right: -20px;
+
+  width: 3px;
+  height: 3px;
+
+  border: 1px solid #000000;
+  border-left-color: #ffffff;
+  border-bottom-color: #ffffff;
+
+  background-color: #ffffff;
+
+  transform: rotate(45deg);
+}
+
+.breadcrumbs-current::after {
+  display: none;
+}
 
 .breadcrumbs a,
 .breadcrumbs-current {
