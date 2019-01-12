@@ -1073,7 +1073,7 @@ padding: 0;
 /*-----------------------*/
 
 .inner-page .main-header {
-  margin-bottom: 37px;
+  margin-bottom: 40px;
 }
 
 .page-title {
@@ -1086,20 +1086,12 @@ padding: 0;
 
 
 .breadcrumbs {
-  list-style: none;
-}
-
-.breadcrumbs {
   display: flex;
   padding: 0;
   margin: 0;
-  padding-left: 60px;
+  margin-left: 60px;
   margin-bottom: 39px;
-}
 
-
-.breadcrumbs a,
-.breadcrumbs-current {
   font-family: "open_sanslight", Arial, sans-serif;
   font-size: 14px;
   line-height: 24px;
@@ -1109,6 +1101,17 @@ padding: 0;
 
   background-color: #ffffff;
   border: none;
+
+  list-style: none;
+
+  /* Временно */
+  /* background: rgba(234, 255, 45, 0.2);
+  box-shadow: inset 0 0 0 2px rgb(234, 255, 45); */
+}
+
+
+.breadcrumbs a,
+.breadcrumbs-current {
   opacity: 0.3;
 }
 
@@ -1441,10 +1444,59 @@ line-height: 40px;
 
 .pagination-list {
   display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+
   padding: 0;
   margin: 0;
+
   list-style: none;
 }
+
+.pagination-list li {
+  margin: 0 14px;
+  flex-shrink: 0;
+}
+
+.pagination-item a {
+  color: #000000;
+  opacity: 0.3;
+}
+
+.pagination-item-current a {
+  opacity: 1;
+}
+
+.catalog-button {
+  display: block;
+
+  box-sizing: border-box;
+  width: 130px;
+  margin: 0;
+  padding: 0 25px;
+
+  flex-shrink: 0;
+
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+
+  border: none;
+
+  cursor: pointer;
+  background-color: #ebebeb;
+}
+
+.catalog-button-back {
+
+}
+
+.catalog-button-next {
+
+}
+
+
+
 
 
 /*------------------*/
