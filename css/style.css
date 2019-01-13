@@ -1167,16 +1167,12 @@ padding: 0;
 .catalog-left-side {
   flex-grow: 1;
 
-  /* width: auto; */
-
   background-color: #efefef;
   box-shadow: 0 70px #dcdcdc inset;
 }
 
 .catalog-right-side {
   flex-grow: 1;
-
-  /* width: auto; */
 
   box-shadow: 0 70px #efefef inset;
 }
@@ -1187,22 +1183,7 @@ padding: 0;
   width: 1200px;
 }
 
-
-/*
-.container {
-  display: flex;
-  flex-direction: column;
-
-  box-sizing: border-box;
-  width: 1200px;
-  padding: 0 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
- */
-
-
-.filters-column {
+.filter-column {
   box-sizing: border-box;
   width: 348px;
   padding-left: 80px;
@@ -1210,11 +1191,7 @@ padding: 0;
   background: #efefef;
   box-shadow: 0 70px #dcdcdc inset;
 
-  /* Временно */
-  /* min-height: 1288px; */
-
 }
-
 
 .catalog-column {
   width: 852px;
@@ -1232,7 +1209,6 @@ padding: 0;
   margin-bottom: 92px;
 }
 
-
 .filter-title,
 .sorting-title {
   font-family: "gilroyextrabold", Arial, sans-serif;
@@ -1245,9 +1221,9 @@ padding: 0;
   letter-spacing: 0.2em;
 }
 
-.filters form {
-font-size: 14px;
-line-height: 40px;
+.filter {
+  display: flex;
+  flex-direction: column;
 }
 
 .filter fieldset {
@@ -1255,6 +1231,8 @@ line-height: 40px;
   margin: 0;
   padding: 0;
   margin-top: 13px;
+  margin-bottom: 30px;
+
   border: none;
 }
 
@@ -1270,15 +1248,24 @@ line-height: 40px;
   background-color: #000000;
 }
 
+.filter legend {
+  font-family: "gilroyextrabold", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+  color: #000000;
+  letter-spacing: 0.01em;
+}
+
 .range-filter {
   width: 200px;
-  margin-bottom: 63px;
+  margin-bottom: 21px;
 }
 
 .range-controls {
   position: relative;
   height: 5px;
-  margin-bottom: 40px;
+  margin-bottom: 33px;
   padding-top: 35px;
 
   border-radius: 5px;
@@ -1322,12 +1309,6 @@ line-height: 40px;
   left: 108px;
 }
 
-
-/* .price-controls {
-  position: absolute;
-  font-size: 0;
-} */
-
 .range-controls label {
   position: absolute;
   display: inline-block;
@@ -1339,7 +1320,7 @@ line-height: 40px;
   font-weight: 300;
   color: rgba(0, 0, 0, 0.2);
 
-  background: #eeeeee;
+  background-color: #eeeeee;
 }
 
 .min-price {
@@ -1356,7 +1337,6 @@ line-height: 40px;
   display: inline-block;
   width: 45px;
   padding: 0;
-  /* margin-left: 0px; */
 
   font-family: "gilroylight", Arial, sans-serif;
   font-size: 14px;
@@ -1365,27 +1345,71 @@ line-height: 40px;
   color: rgba(0, 0, 0, 0.2);
 
   border: none;
-  background: #eeeeee;
+  background-color: #eeeeee;
 }
-
 
 .filter ul {
   margin: 0;
   padding: 0;
-}
 
-.filter legend {
-  font-family: "gilroyextrabold", Arial, sans-serif;
-  font-size: 18px;
-  line-height: 24px;
-  font-weight: 800;
-  color: #000000;
-  letter-spacing: 0.01em;
-}
-
-.filter ul {
   list-style: none;
+}
+
+.color-fieldset legend,
+.bluetooth-fieldset legend {
+  margin-bottom: 18px;
+}
+
+.filter-option {
+  /* margin-bottom: 5px; */
+  padding-left: 38px;
+
+  font-size: 14px;
+  line-height: 40px;
+  font-weight: 300;
   letter-spacing: 0.01em;
+  color: #000000;
+
+  background-color: #eeeeee;
+}
+
+.filter-option label {
+  position: relative;
+
+  display: block;
+
+  cursor: pointer;
+  user-select: none;
+}
+
+.filter-input-checkbox + label::before {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: -40px;
+
+  box-sizing: border-box;
+  width: 23px;
+  height: 23px;
+
+  border: 2px solid #000000;
+  border-radius: 3px;
+}
+
+.filter-input-checkbox:checked + label::after {
+  content: "";
+  position: absolute;
+
+  top: 7px;
+  left: -35px;
+
+  width: 27px;
+  height: 23px;
+
+  background-image: url("../img/checked.png");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+
 }
 
 .filter-input:disabled + label {
