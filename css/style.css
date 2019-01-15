@@ -69,7 +69,9 @@ input[type="radio"].visually-hidden {
 
   white-space: nowrap;
 
-  clip-path: inset(100%);
+  -webkit-clip-path: inset(100%);
+
+          clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -298,8 +300,24 @@ input[type="radio"].visually-hidden {
   background-color: inherit;
 }
 
+input.search-input:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+input.search-input::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.3);
+}
+
 input.search-input::placeholder {
   color: rgba(0, 0, 0, 0.3);
+}
+
+input.search-input:hover:-ms-input-placeholder, input.search-input:focus:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+input.search-input:hover::-ms-input-placeholder, input.search-input:focus::-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.6);
 }
 
 input.search-input:hover::placeholder, input.search-input:focus::placeholder {
@@ -1395,7 +1413,10 @@ padding: 0;
   display: block;
 
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 .filter-input-checkbox + label::before {
