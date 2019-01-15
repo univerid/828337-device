@@ -1,7 +1,7 @@
 
-* {
+/* * {
   background: rgba(0, 255, 0, 0.12);
-}
+} */
 
 
 
@@ -2181,11 +2181,46 @@ input[value="descending"] + label::before {
   font-size: 14px;
   line-height: 18px;
   font-weight: 400;
-  color: #464646;
+  color: rgba(70, 70, 70, 0.4);
+  /* color: #464646; */
 
   background-color: #f2f2f2;
   border: none;
 }
+
+.write-us-form input::-webkit-input-placeholder {
+  color: rgba(70, 70, 70, 0.4);
+}
+.write-us-form input::-moz-placeholder {
+  color: rgba(70, 70, 70, 0.4);
+}
+.write-us-form input:-moz-placeholder {
+  color: rgba(70, 70, 70, 0.4);
+}
+.write-us-form input:-ms-input-placeholder
+{
+  color: rgba(70, 70, 70, 0.4);
+}
+
+/* .write-us-text-item input::-webkit-input-placeholder {
+  vertical-align: top;
+} */
+
+.write-us-form input:hover {
+  background-color: #eaeaea;
+}
+
+.write-us-form input:focus {
+  color: #464646;
+
+  background-color: #ffffff;
+  outline: 3px solid #f7e296;
+}
+
+.write-us-form input:invalid {
+  background-color: #f6dada;
+}
+
 
 .write-us-form {
   display: flex;
@@ -2237,9 +2272,6 @@ input[value="descending"] + label::before {
   min-height: 156px;
 }
 
-.write-us-text::-webkit-input-placeholder {
-  vertical-align: top;
-}
 
 .modal-close {
   position: absolute;
