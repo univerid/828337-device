@@ -391,6 +391,7 @@ input.search-input:hover::placeholder, input.search-input:focus::placeholder {
 
 .logout-link a {
   padding: 0;
+  opacity: 0.3;
 }
 
 .profile-link {
@@ -1913,10 +1914,13 @@ input[value="descending"] + label::before {
 
 .footer-user-navigation a {
   display: block;
-  /* padding-left: 25px; */
   margin-left: 41px;
   color: rgba(255, 255, 255, 0.7);
   background-color: #464646;
+}
+
+.footer-logout-link a {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .footer-user-navigation a:hover,
@@ -1928,7 +1932,6 @@ input[value="descending"] + label::before {
   color: rgba(255, 255, 255, 0.3);
 }
 
-
 .footer-login-link a::before {
   content: "";
   display: inline-block;
@@ -1939,6 +1942,27 @@ input[value="descending"] + label::before {
   margin-right: 12px;
   background-image: url("../img/user-yellow.svg") ;
   background-repeat: no-repeat;
+}
+
+.footer-profile-link a::before {
+  content: "";
+  display: inline-block;
+  vertical-align: baseline;
+  width: 13px;
+  height: 12px;
+
+  margin-right: 12px;
+  background-image: url("../img/user-yellow.svg") ;
+  background-repeat: no-repeat;
+}
+
+.inner-page .footer-logout-link {
+  padding: 0;
+}
+
+.footer-logout-link a {
+  padding: 0;
+  margin-left: 20px;
 }
 
 .footer-compare a::before {
