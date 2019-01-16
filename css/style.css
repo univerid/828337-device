@@ -1613,7 +1613,8 @@ padding: 0;
   cursor: pointer;
 }
 
-.sorting-direction a:hover::before {
+.sorting-direction a:hover::before,
+.sorting-direction a:focus::before {
   opacity: 0.4;
 }
 
