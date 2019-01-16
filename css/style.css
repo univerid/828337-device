@@ -1221,6 +1221,7 @@ padding: 0;
   display: flex;
   box-sizing: border-box;
   width: 1200px;
+  flex-shrink: 0;
 }
 
 .filter-column {
@@ -1228,15 +1229,17 @@ padding: 0;
   width: 348px;
   padding-left: 80px;
   padding-right: 68px;
+  flex-shrink: 0;
+
   background: #eeeeee;
   box-shadow: 0 70px #dcdcdc inset;
-
 }
 
 .catalog-column {
   width: 852px;
   padding-left: 72px;
   padding-right: 20px;
+  flex-shrink: 0;
 
   box-shadow: 0 70px #ebebeb inset;
 }
