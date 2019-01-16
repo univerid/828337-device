@@ -178,6 +178,8 @@ input[type="radio"].visually-hidden {
 
 /* Кнопки всплывающих окон */
 .email-send-button {
+  width: 200px;
+  margin-top: -2px;
   padding-top: 0;
 
   cursor: pointer;
@@ -2189,7 +2191,32 @@ input[value="descending"] + label::before {
   /* outline: 1px solid gray; */
 }
 
+.write-us-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 760px;
+  /* min-height: 390px; */
+}
+
+.write-us-item {
+  margin: 0;
+  margin-bottom: 35px;
+}
+
+.write-us-item:nth-child(1),
+.write-us-item:nth-child(2) {
+  width: 360px;
+}
+
+.write-us-item:nth-child(3) {
+  width: 100%;
+}
+
 .write-us-form label {
+  display: block;
+  margin-bottom: 6px;
+
   font-family: "gilroyextrabold", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
@@ -2201,7 +2228,16 @@ input[value="descending"] + label::before {
   border: none;
 }
 
-.write-us-form input {
+.write-us-form input,
+.write-us-form textarea {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 20px;
+  padding-right: 20px;
+
   font-family: "open_sansregular", Arial, sans-serif;
   font-size: 14px;
   line-height: 18px;
@@ -2213,29 +2249,25 @@ input[value="descending"] + label::before {
   border: none;
 }
 
-.write-us-form input::-webkit-input-placeholder {
-  color: rgba(70, 70, 70, 0.4);
+.write-us-text {
+  height: 156px;
+  resize: none;
 }
-.write-us-form input::-moz-placeholder {
-  color: rgba(70, 70, 70, 0.4);
-}
-.write-us-form input:-moz-placeholder {
-  color: rgba(70, 70, 70, 0.4);
-}
-.write-us-form input:-ms-input-placeholder
-{
-  color: rgba(70, 70, 70, 0.4);
+
+.write-us-item textarea {
 }
 
 /* .write-us-text-item input::-webkit-input-placeholder {
   vertical-align: top;
 } */
 
-.write-us-form input:hover {
+.write-us-form input:hover,
+.write-us-form textarea:hover {
   background-color: #eaeaea;
 }
 
-.write-us-form input:focus {
+.write-us-form input:focus,
+.write-us-form textarea:focus {
   color: #464646;
 
   background-color: #ffffff;
@@ -2246,55 +2278,48 @@ input[value="descending"] + label::before {
   background-color: #f6dada;
 }
 
-
-.write-us-form {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  width: 760px;
-  /* min-height: 390px; */
-
-  /* Временно */
-  /* outline: 1px solid gray; */
+.write-us-form input::-webkit-input-placeholder {
+  color: rgba(70, 70, 70, 0.4);
 }
 
-.write-us-item {
-  margin: 0;
-  margin-bottom: 35px;
-
-  /* Временно */
-  /* outline: 1px solid gray; */
+.write-us-form input::-moz-placeholder {
+  color: rgba(70, 70, 70, 0.4);
 }
 
-.write-us-item:nth-child(1),
-.write-us-item:nth-child(2) {
-  width: 360px;
-
+.write-us-form input:-moz-placeholder {
+  color: rgba(70, 70, 70, 0.4);
 }
 
-.write-us-item:nth-child(3) {
-  width: 100%;
+.write-us-form input:-ms-input-placeholder
+{
+  color: rgba(70, 70, 70, 0.4);
 }
 
-.write-us-item label {
-  display: block;
-  margin-bottom: 6px;
+.write-us-form input::placeholder
+{
+  color: rgba(70, 70, 70, 0.4);
 }
 
-.write-us-item input {
-  box-sizing: border-box;
-  width: 100%;
-  margin: 0;
-  padding-top: 16px;
-  padding-bottom: 16px;
-  padding-left: 20px;
-
-  /* Временно */
-  /* outline: 1px solid gray; */
+.write-us-form textarea::-webkit-input-placeholder {
+  color: rgba(70, 70, 70, 0.4);
 }
 
-.write-us-text {
-  min-height: 156px;
+.write-us-form textarea::-moz-placeholder {
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.write-us-form textarea:-moz-placeholder {
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.write-us-form textarea:-ms-input-placeholder
+{
+  color: rgba(70, 70, 70, 0.4);
+}
+
+.write-us-form textarea::placeholder
+{
+  color: rgba(70, 70, 70, 0.4);
 }
 
 
