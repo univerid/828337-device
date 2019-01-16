@@ -126,32 +126,15 @@
           <div class="catalog-column">
             <section class="sorting">
               <h2 class="sorting-title">Сортировка:</h2>
-              <form class="sorting-form" method="get" action="https://echo.htmlacademy.ru">
-                  <ul class="sorting-options">
-                    <li class="sorting-option">
-                      <input class="visually-hidden sorting-input-radio" type="radio" name="sorting-radio" id="sorting-price" value="sorting-price" checked>
-                      <label for="sorting-price">По цене</label>
-                    </li>
-                    <li class="sorting-option">
-                      <input class="visually-hidden sorting-input-radio" type="radio" name="sorting-radio" id="sorting-type" value="sorting-type">
-                      <label for="sorting-type">По типу</label>
-                    </li>
-                    <li class="sorting-option">
-                      <input class="visually-hidden sorting-input-radio" type="radio" name="sorting-radio" id="sorting-popularity" value="sorting-popularity">
-                      <label for="sorting-popularity">По популярности</label>
-                    </li>
-                  </ul>
-                  <ul class="sorting-direction">
-                    <li class="direction-type">
-                      <input class="visually-hidden direction-input-radio" type="radio" name="direction-radio" id="ascending" value="ascending">
-                      <label for="ascending" aria-label="По возрастанию"></label>
-                    </li>
-                    <li class="direction-type">
-                      <input class="visually-hidden direction-input-radio" type="radio" name="direction-radio" id="descending" value="descending" checked>
-                      <label for="descending" aria-label="По убыванию"></label>
-                    </li>
-                  </ul>
-              </form>
+              <ul class="sorting-options">
+                <li><a href="#">По цене</a></li>
+                <li><a href="#">По типу</a></li>
+                <li><a href="#">По популярности</a></li>
+              </ul>
+              <ul class="sorting-direction">
+                <li class="direction-ascending"><a href="#" aria-label="По возрастанию"></a></li>
+                <li class="direction-descending"><a href="#" aria-label="По убыванию"></a></li>
+              </ul>
             </section>
 
             <section class="catalog">
