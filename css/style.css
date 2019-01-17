@@ -1103,7 +1103,14 @@ padding: 0;
 }
 
 .contacts-map {
+  position: relative;
   margin-top: 40px;
+}
+
+.contacts-map img {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /*-----------------------*/
@@ -1356,6 +1363,7 @@ padding: 0;
   position: absolute;
   display: inline-block;
   width: 70px;
+  vertical-align: top;
 
   font-family: "gilroylight", Arial, sans-serif;
   font-size: 14px;
@@ -1380,6 +1388,7 @@ padding: 0;
   display: inline-block;
   width: 45px;
   padding: 0;
+  vertical-align: top;
 
   font-family: "gilroylight", Arial, sans-serif;
   font-size: 14px;
