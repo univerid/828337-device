@@ -65,9 +65,7 @@ input[type="radio"].visually-hidden {
   padding: 0;
 
   white-space: nowrap;
-
-  -webkit-clip-path: inset(100%);
-          clip-path: inset(100%);
+  clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
@@ -287,24 +285,8 @@ input[type="radio"].visually-hidden {
   background-color: inherit;
 }
 
-input.search-input:-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.3);
-}
-
-input.search-input::-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.3);
-}
-
 input.search-input::placeholder {
   color: rgba(0, 0, 0, 0.3);
-}
-
-input.search-input:hover:-ms-input-placeholder, input.search-input:focus:-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.6);
-}
-
-input.search-input:hover::-ms-input-placeholder, input.search-input:focus::-ms-input-placeholder {
-  color: rgba(0, 0, 0, 0.6);
 }
 
 input.search-input:hover::placeholder, input.search-input:focus::placeholder {
@@ -1081,6 +1063,10 @@ padding: 0;
   left: 0;
 }
 
+.contacts-map iframe {
+  pointer-events: none;
+}
+
 /*Cтраница каталога*/
 
 .inner-page .main-header {
@@ -1389,10 +1375,7 @@ padding: 0;
   display: block;
 
   cursor: pointer;
-  -webkit-user-select: none;
-     -moz-user-select: none;
-      -ms-user-select: none;
-          user-select: none;
+  user-select: none;
 }
 
 .filter-input-checkbox + label::before {
@@ -2127,8 +2110,67 @@ padding: 0;
   height: 35px;
 }
 
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(-1000px);
+  }
+
+  70% {
+    transform: translateY(30px);
+  }
+
+  90% {
+    transform: translateY(-10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes shake {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-10px);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(10px);
+  }
+}
+
+.modal-show {
+  display: block;
+  animation: bounce 0.6s;
+}
+
+.modal-error {
+  animation: shake 0.6s;
+}
+
 .modal-write-us {
-  position: relative;
+  top: 120px;
+  left: 50%;
+  margin-left: -480px;
+
+
   box-sizing: border-box;
   width: 960px;
   padding-top: 95px;
@@ -2220,41 +2262,7 @@ padding: 0;
   background-color: #f6dada;
 }
 
-.write-us-form input::-webkit-input-placeholder {
-  color: rgba(70, 70, 70, 0.4);
-}
-
-.write-us-form input::-moz-placeholder {
-  color: rgba(70, 70, 70, 0.4);
-}
-
-.write-us-form input:-moz-placeholder {
-  color: rgba(70, 70, 70, 0.4);
-}
-
-.write-us-form input:-ms-input-placeholder
-{
-  color: rgba(70, 70, 70, 0.4);
-}
-
 .write-us-form input::placeholder
-{
-  color: rgba(70, 70, 70, 0.4);
-}
-
-.write-us-form textarea::-webkit-input-placeholder {
-  color: rgba(70, 70, 70, 0.4);
-}
-
-.write-us-form textarea::-moz-placeholder {
-  color: rgba(70, 70, 70, 0.4);
-}
-
-.write-us-form textarea:-moz-placeholder {
-  color: rgba(70, 70, 70, 0.4);
-}
-
-.write-us-form textarea:-ms-input-placeholder
 {
   color: rgba(70, 70, 70, 0.4);
 }
@@ -2314,7 +2322,9 @@ padding: 0;
 }
 
 .modal-map {
-  position: relative;
+  top: 120px;
+  left: 50%;
+  margin-left: -480px;
 
   box-sizing: border-box;
   width: 960px;
